@@ -17,8 +17,12 @@ RSpec.describe Board do
 
   describe "board" do
 
-    it "initializes a new board" do
+    it "initializes a new board with 100 cells" do
+      expect(board.cell_count).to eq(100)
+    end
 
+    it "has a 10 x 10 grid" do
+      expect(board.grid_structure).to eq ("10x10")
     end
 
 

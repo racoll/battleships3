@@ -19,6 +19,9 @@ RSpec.describe Game do
       expect(game.player_1).to be_a(Player)
     end
 
+    it "initializes with a player 2" do
+      expect(game.player_2).to be_a(Player)
+    end
 
 
 
